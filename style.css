@@ -10,7 +10,7 @@
     --netflix-card-bg: #2d2d2d;
     --netflix-gradient-bg: linear-gradient(135deg, #1a1a2e, #16213e);
 
-    --font-family: 'Helvetica Neue', Arial, sans-serif;
+    --font-family: 'Inter', Arial, sans-serif;
     --border-radius: 4px;
     --transition: all 0.3s ease;
     --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
