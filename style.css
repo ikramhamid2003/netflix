@@ -47,20 +47,20 @@ h6 {
 }
 
 h1 {
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);  /* Reduced from 2.5rem, 8vw, 4.5rem */
     font-weight: 900;
 }
 
 h2 {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(1.2rem, 3vw, 2rem);  /* Reduced from 1.5rem, 4vw, 2.5rem */
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;  /* Reduced from 1.25rem */
 }
 
 p {
-    font-size: 2.5rem;
+    font-size: 1.2rem;  /* Reduced from 2.5rem */
     font-weight: 400;
 }
 
@@ -87,7 +87,7 @@ p {
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     transition: var(--transition);
@@ -99,7 +99,7 @@ p {
     background-color: var(--netflix-red);
     padding: 15px 30px;
     border-radius: 5px;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     color: var(--netflix-white);
 }
 
@@ -109,7 +109,7 @@ p {
 
 .btn-lg {
     padding: 20px 50px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 200;
     border-radius: 10px;
 }
@@ -176,7 +176,7 @@ p {
     color: var(--netflix-white);
     padding: 15px 0px 15px 70px;
     border-radius: 10px;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     height: 40px;
     max-width: 250px;
     appearance: none;
@@ -246,13 +246,13 @@ p {
 }
 
 .hero-pricing {
-    font-size: clamp(2rem, 2vw, 1.25rem) !important;
+    font-size: 1.2rem !important;
     font-weight: 400;
     margin-bottom: 34px !important;
 }
 
 .hero-subtext {
-    font-size: clamp(2rem, 1.8vw, 1.125rem) !important;
+    font-size: 1.1rem !important;
     margin-bottom: 32px !important;
     opacity: 0.9;
 }
