@@ -626,6 +626,7 @@ p {
     margin: auto;
 }
 .cta-section .input-group{
+    position: relative;
     width: 60rem;
     margin: auto;
 }
@@ -796,7 +797,7 @@ p {
     }
 
     .input-group input {
-        min-width: unset;
+        min-width: 150px;
     }
 
     .reasons-section {
