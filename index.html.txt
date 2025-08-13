@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regitration Form</title>
+    <style>
+        h2 {
+            color: rgb(10, 81, 18);
+            display: block;
+            width: 100vw;
+        }
+
+        body {
+            background: linear-gradient(to right, red, orange, yellow, green, blue);
+
+        }
+
+        .container {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 550px;
+            margin: 250px auto;
+            padding: 20px 20px 10px;
+            background-color: rgba(14, 199, 125, 0.5);
+            position: absolute;
+            border-radius: 30px;
+            top: -120px;
+            left: 400px;
+
+        }
+
+        .container .con12 {
+            display: flex;
+        }
+
+        .container .con12 .con1 {
+            width: 50%;
+        }
+
+        .container .con12 .con2 {
+            width: 50%;
+        }
+
+        div {
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        button {
+            color: darkolivegreen;
+            background-color: lightgreen;
+            margin: auto;
+            padding: 20px 80px;
+            font-size: 30px;
+            border-radius: 30px;
+            align-items: center;
+        }
+
+        .input input {
+            width: 100%;
+            font-size: 1.2em;
+            border: 1px solid gray;
+            box-shadow: 2px 2px 5px auto;
+            border-radius: 15px;
+            padding: 10px 10px;
+            box-sizing: border-box;
+            margin: 5px 0px 15px;
+        }
+
+        form {
+            display: block;
+            margin-top: 0em;
+            unicode-bidi: isolate;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h2>Fill the details in the appropriate fields given below</h2>
+    </center>
+    <div class="container">
+        <div class="con12">
+            <div class="con1">
+                <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_700,h_657/https://www.intellspot.com/wp-content/uploads/2024/03/Male-user-fills-out-registration-form-in-a-smartphone-app.jpg"
+                    alt="sign up" width="250px" height="270px">
+            </div>
+            <div class="con2">
+                <form action="11.html">
+                    <div class="input">
+                        <label for="name">name</label><br>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                    </div>
+                    <div class="radio">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" required value="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" required value="female">
+                    </div>
+                    <div class="btn">
+                        <button>Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
