@@ -145,12 +145,12 @@ p {
 
 .nav-brand svg,
 .nav-brand img {
-    height: 80px;
+    height: 40px;
     width: auto;
 }
 
 .netflix-logo {
-    height: 45px;
+    height: 40px;
     width: auto;
 }
 
@@ -158,7 +158,7 @@ p {
     display: flex;
     align-items: center;
     gap: 20px;
-    height: 60px;
+    height: 40px;
 }
 
 .language-selector {
@@ -177,8 +177,8 @@ p {
     padding: 15px 0px 15px 70px;
     border-radius: 10px;
     font-size: 1.7rem;
-    height: 60px;
-    min-width: 250px;
+    height: 40px;
+    max-width: 250px;
     appearance: none;
     background-image:
         url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='16' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z'/%3E%3C/svg%3E"),
