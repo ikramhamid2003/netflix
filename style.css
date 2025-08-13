@@ -133,8 +133,8 @@ p {
     max-width: 90vw;
     height: 0px;
     margin-top: 60px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .nav-brand {
@@ -707,9 +707,23 @@ p {
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
+/* ...existing code... */
+
+/* Large Screens (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* Medium Screens (992px to 1199px) */
+@media (max-width: 1199px) {
     .faq-list {
         max-width: 90vw;
+    }
+    
+    .reasons-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .faq-question {
@@ -722,69 +736,24 @@ p {
         padding: 0 32px 28px;
         font-size: 1.25rem;
     }
-
-    .reasons-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 16px;
-        max-width: 90vw;
-    }
-
-    .wide-container {
-        max-width: 90vw;
-        padding: 0 20px;
-    }
-
-    .trending-item {
-        width: 200px;
-        min-width: 200px;
-        height: 300px;
-    }
-
-    .carousel-container {
-        gap: 12px;
-    }
-
-    .rank-number {
-        font-size: 6rem;
-        bottom: -12px;
-        left: -15px;
-        -webkit-text-stroke: 2px var(--netflix-white);
-        text-stroke: 2px var(--netflix-white);
-    }
-
-    .reasons-section h2,
-    .faq-section h2 {
-        font-size: 2.5rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
 }
 
-@media (max-width: 768px) {
+/* Tablets (768px to 991px) */
+@media (max-width: 991px) {
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-section .input-group {
+        width: 90%;
+    }
+
     .navbar {
         padding: 16px 20px;
         margin-top: 20px;
         margin-left: 0;
         margin-right: 0;
         max-width: 100vw;
-    }
-
-    .nav-brand,
-    .nav-actions {
-        height: 50px;
-    }
-
-    .nav-brand svg,
-    .nav-brand img,
-    .netflix-logo {
-        height: 38px;
-    }
-
-    .nav-actions {
-        gap: 12px;
     }
 
     .hero-content {
@@ -795,26 +764,16 @@ p {
         flex-direction: column;
         align-items: stretch;
     }
+}
 
-    .input-group input {
-        min-width: unset;
+/* Mobile Landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 450px;
     }
-
-    .reasons-section {
-        padding: 40px 0;
-    }
-
-    .reasons-grid {
-        padding: 0 16px;
-    }
-
-    .reason-card {
-        padding: 24px;
-        min-height: 200px;
-    }
-
-    .trending-section {
-        padding: 40px 0;
+    
+    .hero-content {
+        margin-top: 80px;
     }
 
     .trending-item {
@@ -823,66 +782,19 @@ p {
         height: 240px;
     }
 
-    .carousel-container {
-        gap: 10px;
-        padding: 0 16px;
-    }
-
     .rank-number {
         font-size: 5rem;
         bottom: -10px;
         left: -12px;
-        -webkit-text-stroke: 2px var(--netflix-white);
-        text-stroke: 2px var(--netflix-white);
-    }
-
-    .faq-section {
-        padding: 80px 0 100px;
-    }
-
-    .faq-question {
-        padding: 24px 28px;
-        font-size: 1.375rem;
-        min-height: 65px;
-    }
-
-    .faq-question i {
-        font-size: 1.5rem;
-        margin-left: 15px;
-    }
-
-    .faq-answer p {
-        padding: 0 28px 24px;
-        font-size: 1.125rem;
-    }
-
-    .reason-card h3 {
-        font-size: 1.5rem;
-    }
-
-    .reason-card p {
-        font-size: 1rem;
-    }
-
-    .reasons-section h2,
-    .faq-section h2 {
-        font-size: 2.5rem;
-        margin-bottom: 50px;
-    }
-
-    .footer {
-        padding: 60px 0 32px;
-    }
-
-    .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
     }
 }
 
+/* Mobile Portrait */
 @media (max-width: 480px) {
-    .container {
+    .container, 
+    .wide-container {
         padding: 0 16px;
+        width: 100%;
     }
 
     .hero-content h1 {
@@ -893,32 +805,28 @@ p {
         font-size: 1rem;
     }
 
-    .hero-subtext {
-        font-size: 0.9rem !important;
-    }
-
-    .section-title {
-        font-size: 1.75rem;
-        padding-left: 16px;
-    }
-
     .trending-item {
         width: 140px;
         min-width: 140px;
         height: 200px;
     }
 
-    .carousel-container {
-        padding: 0 16px;
-        gap: 8px;
+    .footer-links {
+        grid-template-columns: 1fr;
     }
 
     .rank-number {
         font-size: 4rem;
         bottom: -8px;
         left: -10px;
-        -webkit-text-stroke: 2px var(--netflix-white);
-        text-stroke: 2px var(--netflix-white);
+    }
+}
+
+/* Safe Area for Notched Phones */
+@supports (padding: max(0px)) {
+    .header {
+        padding-left: max(20px, env(safe-area-inset-left));
+        padding-right: max(20px, env(safe-area-inset-right));
     }
 }
 
@@ -935,23 +843,8 @@ p {
     }
 }
 
-@media (prefers-high-contrast: high) {
-    :root {
-        --netflix-light-gray: #CCCCCC;
-    }
-
-    .btn-primary {
-        border: 2px solid var(--netflix-white);
-    }
-
-    .faq-question {
-        border: 1px solid var(--netflix-light-gray);
-    }
-}
-
 /* Print styles */
 @media print {
-
     .hero-background,
     .reason-card,
     .trending-item {
