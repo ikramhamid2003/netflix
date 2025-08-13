@@ -206,7 +206,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('bg.jpg');
+    background-image: url('/images/bg.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.7;
@@ -360,86 +360,88 @@ p {
 /* Updated rank number styling */
 .rank-number {
     position: absolute;
-    bottom: -15px;
-    left: -20px;
-    color: transparent;
-    font-size: 8rem;
-    font-weight: 900;
-    line-height: 0.7;
-    z-index: 30;
-    font-family: 'Arial Black', sans-serif;
-    -webkit-text-stroke: 3px var(--netflix-white);
-    text-stroke: 3px var(--netflix-white);
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.9));
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    left: -20px;   /* Adjust as needed */
+    bottom: -20px; /* Adjust as needed */
+    background: #e50914;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 2;
 }
 
 /* Individual trending items with working placeholder images */
 .trending-item.item-1 {
-     background-image: url('wednesday.jpg');
+     background-image: url('/images/wednesday.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-2 {
-     background-image: url('thegreatindiankapilshow.jpg');
+     background-image: url('/images/thegreatindiankapilshow.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-3 {
-     background-image: url('raid2.jpg');
+     background-image: url('/images/raid2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-4 {
-     background-image: url('squidgame.jpg');
+     background-image: url('/images/squidgame.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-5 {
-     background-image: url('mandalmurders.jpg');
+     background-image: url('/images/mandalmurders.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-6 {
-     background-image: url('jaat.jpg');
+     background-image: url('/images/jaat.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-7 {
-     background-image: url('aapjaisakoi.jpg');
+     background-image: url('/images/aapjaisakoi.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-8 {
-     background-image: url('hit.jpg');
+     background-image: url('/images/hit.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-9 {
-     background-image: url('chhaava.jpg');
+     background-image: url('/images/chhaava.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-10 {
-     background-image: url('sexlife.jpg');
+     background-image: url('/images/sexlife.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
