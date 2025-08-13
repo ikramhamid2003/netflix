@@ -10,7 +10,7 @@
     --netflix-card-bg: #2d2d2d;
     --netflix-gradient-bg: linear-gradient(135deg, #1a1a2e, #16213e);
 
-    --font-family: 'Inter', Arial, sans-serif;
+    --font-family: 'Helvetica Neue', Arial, sans-serif;
     --border-radius: 4px;
     --transition: all 0.3s ease;
     --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
@@ -47,20 +47,20 @@ h6 {
 }
 
 h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);  /* Reduced from 2.5rem, 8vw, 4.5rem */
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
     font-weight: 900;
 }
 
 h2 {
-    font-size: clamp(1.2rem, 3vw, 2rem);  /* Reduced from 1.5rem, 4vw, 2.5rem */
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 
 h3 {
-    font-size: 1rem;  /* Reduced from 1.25rem */
+    font-size: 1.25rem;
 }
 
 p {
-    font-size: 1.2rem;  /* Reduced from 2.5rem */
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
@@ -87,7 +87,7 @@ p {
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     cursor: pointer;
     transition: var(--transition);
@@ -99,7 +99,7 @@ p {
     background-color: var(--netflix-red);
     padding: 15px 30px;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     color: var(--netflix-white);
 }
 
@@ -109,7 +109,7 @@ p {
 
 .btn-lg {
     padding: 20px 50px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 200;
     border-radius: 10px;
 }
@@ -133,8 +133,8 @@ p {
     max-width: 90vw;
     height: 0px;
     margin-top: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .nav-brand {
@@ -145,12 +145,12 @@ p {
 
 .nav-brand svg,
 .nav-brand img {
-    height: 40px;
+    height: 80px;
     width: auto;
 }
 
 .netflix-logo {
-    height: 40px;
+    height: 45px;
     width: auto;
 }
 
@@ -158,7 +158,7 @@ p {
     display: flex;
     align-items: center;
     gap: 20px;
-    height: 40px;
+    height: 60px;
 }
 
 .language-selector {
@@ -176,9 +176,9 @@ p {
     color: var(--netflix-white);
     padding: 15px 0px 15px 70px;
     border-radius: 10px;
-    font-size: 1.2rem;
-    height: 40px;
-    max-width: 250px;
+    font-size: 1.7rem;
+    height: 60px;
+    min-width: 250px;
     appearance: none;
     background-image:
         url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='16' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z'/%3E%3C/svg%3E"),
@@ -206,7 +206,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/images/bg.jpg');
+    background-image: url('images/bg.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.7;
@@ -246,13 +246,13 @@ p {
 }
 
 .hero-pricing {
-    font-size: 1.2rem !important;
+    font-size: clamp(2rem, 2vw, 1.25rem) !important;
     font-weight: 400;
     margin-bottom: 34px !important;
 }
 
 .hero-subtext {
-    font-size: 1.1rem !important;
+    font-size: clamp(2rem, 1.8vw, 1.125rem) !important;
     margin-bottom: 32px !important;
     opacity: 0.9;
 }
@@ -360,88 +360,86 @@ p {
 /* Updated rank number styling */
 .rank-number {
     position: absolute;
-    left: -20px;   /* Adjust as needed */
-    bottom: -20px; /* Adjust as needed */
-    background: #e50914;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    z-index: 2;
+    bottom: -15px;
+    left: -20px;
+    color: transparent;
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 0.7;
+    z-index: 30;
+    font-family: 'Arial Black', sans-serif;
+    -webkit-text-stroke: 3px var(--netflix-white);
+    text-stroke: 3px var(--netflix-white);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.9));
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 /* Individual trending items with working placeholder images */
 .trending-item.item-1 {
-     background-image: url('/images/wednesday.jpg');
+     background-image: url('images/wednesday.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-2 {
-     background-image: url('/images/thegreatindiankapilshow.jpg');
+     background-image: url('images/thegreatindiankapilshow.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-3 {
-     background-image: url('/images/raid2.jpg');
+     background-image: url('images/raid2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-4 {
-     background-image: url('/images/squidgame.jpg');
+     background-image: url('images/squidgame.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-5 {
-     background-image: url('/images/mandalmurders.jpg');
+     background-image: url('images/mandalmurders.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-6 {
-     background-image: url('/images/jaat.jpg');
+     background-image: url('images/jaat.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-7 {
-     background-image: url('/images/aapjaisakoi.jpg');
+     background-image: url('images/aapjaisakoi.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-8 {
-     background-image: url('/images/hit.jpg');
+     background-image: url('images/hit.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-9 {
-     background-image: url('/images/chhaava.jpg');
+     background-image: url('images/chhaava.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .trending-item.item-10 {
-     background-image: url('/images/sexlife.jpg');
+     background-image: url('images/sexlife.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -707,23 +705,9 @@ p {
 }
 
 /* Responsive Design */
-/* ...existing code... */
-
-/* Large Screens (1200px and up) */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1170px;
-    }
-}
-
-/* Medium Screens (992px to 1199px) */
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
     .faq-list {
         max-width: 90vw;
-    }
-    
-    .reasons-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .faq-question {
@@ -736,24 +720,69 @@ p {
         padding: 0 32px 28px;
         font-size: 1.25rem;
     }
-}
 
-/* Tablets (768px to 991px) */
-@media (max-width: 991px) {
     .reasons-grid {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 16px;
+        max-width: 90vw;
     }
 
-    .cta-section .input-group {
-        width: 90%;
+    .wide-container {
+        max-width: 90vw;
+        padding: 0 20px;
     }
 
+    .trending-item {
+        width: 200px;
+        min-width: 200px;
+        height: 300px;
+    }
+
+    .carousel-container {
+        gap: 12px;
+    }
+
+    .rank-number {
+        font-size: 6rem;
+        bottom: -12px;
+        left: -15px;
+        -webkit-text-stroke: 2px var(--netflix-white);
+        text-stroke: 2px var(--netflix-white);
+    }
+
+    .reasons-section h2,
+    .faq-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
     .navbar {
         padding: 16px 20px;
         margin-top: 20px;
         margin-left: 0;
         margin-right: 0;
         max-width: 100vw;
+    }
+
+    .nav-brand,
+    .nav-actions {
+        height: 50px;
+    }
+
+    .nav-brand svg,
+    .nav-brand img,
+    .netflix-logo {
+        height: 38px;
+    }
+
+    .nav-actions {
+        gap: 12px;
     }
 
     .hero-content {
@@ -764,16 +793,26 @@ p {
         flex-direction: column;
         align-items: stretch;
     }
-}
 
-/* Mobile Landscape */
-@media (max-width: 768px) and (orientation: landscape) {
-    .hero {
-        min-height: 450px;
+    .input-group input {
+        min-width: unset;
     }
-    
-    .hero-content {
-        margin-top: 80px;
+
+    .reasons-section {
+        padding: 40px 0;
+    }
+
+    .reasons-grid {
+        padding: 0 16px;
+    }
+
+    .reason-card {
+        padding: 24px;
+        min-height: 200px;
+    }
+
+    .trending-section {
+        padding: 40px 0;
     }
 
     .trending-item {
@@ -782,19 +821,66 @@ p {
         height: 240px;
     }
 
+    .carousel-container {
+        gap: 10px;
+        padding: 0 16px;
+    }
+
     .rank-number {
         font-size: 5rem;
         bottom: -10px;
         left: -12px;
+        -webkit-text-stroke: 2px var(--netflix-white);
+        text-stroke: 2px var(--netflix-white);
+    }
+
+    .faq-section {
+        padding: 80px 0 100px;
+    }
+
+    .faq-question {
+        padding: 24px 28px;
+        font-size: 1.375rem;
+        min-height: 65px;
+    }
+
+    .faq-question i {
+        font-size: 1.5rem;
+        margin-left: 15px;
+    }
+
+    .faq-answer p {
+        padding: 0 28px 24px;
+        font-size: 1.125rem;
+    }
+
+    .reason-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .reason-card p {
+        font-size: 1rem;
+    }
+
+    .reasons-section h2,
+    .faq-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        padding: 60px 0 32px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
 }
 
-/* Mobile Portrait */
 @media (max-width: 480px) {
-    .container, 
-    .wide-container {
+    .container {
         padding: 0 16px;
-        width: 100%;
     }
 
     .hero-content h1 {
@@ -805,28 +891,32 @@ p {
         font-size: 1rem;
     }
 
+    .hero-subtext {
+        font-size: 0.9rem !important;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        padding-left: 16px;
+    }
+
     .trending-item {
         width: 140px;
         min-width: 140px;
         height: 200px;
     }
 
-    .footer-links {
-        grid-template-columns: 1fr;
+    .carousel-container {
+        padding: 0 16px;
+        gap: 8px;
     }
 
     .rank-number {
         font-size: 4rem;
         bottom: -8px;
         left: -10px;
-    }
-}
-
-/* Safe Area for Notched Phones */
-@supports (padding: max(0px)) {
-    .header {
-        padding-left: max(20px, env(safe-area-inset-left));
-        padding-right: max(20px, env(safe-area-inset-right));
+        -webkit-text-stroke: 2px var(--netflix-white);
+        text-stroke: 2px var(--netflix-white);
     }
 }
 
@@ -843,8 +933,23 @@ p {
     }
 }
 
+@media (prefers-high-contrast: high) {
+    :root {
+        --netflix-light-gray: #CCCCCC;
+    }
+
+    .btn-primary {
+        border: 2px solid var(--netflix-white);
+    }
+
+    .faq-question {
+        border: 1px solid var(--netflix-light-gray);
+    }
+}
+
 /* Print styles */
 @media print {
+
     .hero-background,
     .reason-card,
     .trending-item {
